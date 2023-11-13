@@ -1,0 +1,28 @@
+#video {
+    height: 540px;
+    width: 960px;
+}
+
+.centerContent {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.centerDiv {
+    margin: auto;
+}
+
+.grid-content {
+    border-radius: 0vh;
+    border-radius: 5vh;
+    padding: 2vh;
+}
+
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 170px;
+    grid-template-columns: auto auto;
+}
