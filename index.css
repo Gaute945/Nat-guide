@@ -1,28 +1,121 @@
 #video {
-    height: 540px;
-    width: 960px;
+  height: 540px;
+  width: 960px;
 }
 
 .centerContent {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 .centerDiv {
-    margin: auto;
+  margin: auto;
 }
 
 .grid-content {
-    border-radius: 0vh;
-    border-radius: 5vh;
-    padding: 2vh;
+  border-radius: 0vh;
+  border-radius: 5vh;
+  padding: 2vh;
+}
+
+.hidden {
+  display: none;
 }
 
 .grid-container {
-    display: grid;
-    column-gap: 50px;
-    row-gap: 170px;
-    grid-template-columns: auto auto;
+  display: grid;
+  column-gap: 50px;
+  row-gap: 170px;
+  grid-template-columns: auto;
+  background-color: var(--color4);
+}
+
+body {
+  background-color: var(--color1);
+  margin: 0%;
+}
+
+footer {
+  font-family: var(--brødtekst);
+  font-size: 110%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.tekst {
+  font-family: var(--brødtekst);
+  margin: 1%;
+}
+
+.overskrift {
+  color: var(--gray1);
+  font-family: var(--overskrift);
+  margin: 1%;
+  font-size: 170%;
+}
+
+.main {
+  font-size: 2vh;
+}
+
+.backdrop {
+  background-color: var(--color3);
+  border-radius: 20px;
+  height: auto;
+  margin: 5%;
+  height: 80%;
+  overflow: hidden;
+  position: relative;
+}
+
+.link {
+  color: var(--green1) !important;
+}
+
+.hide {
+  display: none;
+}
+
+.myDIV:hover+.hide {
+  display: flex;
+}
+
+#noctua {
+  margin-top: -124px;
+}
+
+#git {
+  width: 10vh;
+  margin-left: 1%;
+}
+
+#mail {
+  width: 10vh;
+}
+
+#logo {
+  float: right;
+  margin: 1% 1% 0% 0%;
+  width: 11vh;
+}
+
+.backdrop #logo {
+  display: flex;
+}
+
+@media (max-width: 1300px) {
+  #pic {
+    width: 20vh;
+  }
+
+  #git {
+    width: 10vh;
+  }
+
+  #mail {
+    width: 10vh;
+  }
 }
