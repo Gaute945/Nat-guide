@@ -4,6 +4,6 @@
     --color3: #739072;
     --color4: #4F6F52;
     --color5: #3A4D39;
-    --overskrift: Verdana, Geneva, Tahoma, sans-serif;
-    --brødtekst: "Rubik", sans-serif;
+    --overskrift: Verdana, Geneva, Tahoma, sans-serif, font-weight: bold;
+    --brødtekst: 'Rubik';
 }

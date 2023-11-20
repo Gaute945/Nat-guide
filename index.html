@@ -9,37 +9,59 @@
 </head>
 
 <body>
-    <div>
-    <div class="centerDiv"><h1 class="centerContent">Nat tetorial</h1></div>
-    <div class="centerDiv centerContent"><iframe width="560" height="315" src="https://www.youtube.com/embed/kLYVd5QpsPA?si=vazkp10pxADgR9Jg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-    <div class="grid-container">
-        <div class="grid-content">
-            <h1>Question 1</h1>
-            <p>Question 1</p>
-            is this true?<input type="checkbox"><br>
-            is this true?<input type="checkbox"><br>
-            is this true?<input type="checkbox"><br>
-        </div>
-
-        <div class="grid-content hidden">
-            <h1>Question 2</h1>
-            <p>Question 2</p>
-            <input type="text">
-        </div>
-
-        <div class="grid-content">
-            <h1>Question 3</h1>
-            <p>Question 3</p>
-            <input type="datetime">
-        </div>
-
-        <div class="grid-content">
-            <h1>Question 4</h1>
-            <p>Question 4</p>
-            <input type="date">
-        </div>
+    <div class="center">
+        <p class="overskrift">Nat tetorial</p>
+        <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/kLYVd5QpsPA?si=vazkp10pxADgR9Jg"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
     </div>
-    <footer>
+    <div class="grid-content" id="1">
+        <h1>Question 1</h1>
+        <p>kvifor bruker me Nat</p>
+        <form>
+            <li>is this true?<input type="checkbox"></li>
+            <li>is this true?<input type="checkbox"></li>
+            <li>is this true?<input type="checkbox"></li>
+            <br><button type="button" onclick="next(1)">Submitt</button>
+        </form>
+    </div>
+
+    <div class="grid-content hidden" id="2">
+        <h1>Question 2</h1>
+        <p>kvifor bruker me Nat</p>
+        <form>
+            <li>is this true?<input type="checkbox"></li>
+            <li>is this true?<input type="checkbox"></li>
+            <li>is this true?<input type="checkbox"></li>
+            <br><button type="button" onclick="next(2)">Submitt</button>
+        </form>
+    </div>
+
+    <div class="grid-content hidden" id="3">
+        <h1>Question 3</h1>
+        <p>kva brukes nat til</p>
+        <form>
+            <li>is this true?<input type="checkbox"></li>
+            <li>is this true?<input type="checkbox"></li>
+            <li>is this true?<input type="checkbox"></li>
+            <br><button type="button" onclick="next(3)">Submitt</button>
+        </form>
+    </div>
+
+    <div class="grid-content hidden" id="4">
+        <h1>Question 4</h1>
+        <p>kva bruker Nat</p>
+        <form>
+            <li>is this true?<input type="checkbox"></li>
+            <li>is this true?<input type="checkbox"></li>
+            <li>is this true?<input type="checkbox"></li>
+            <br><button type="button" onclick="next(4)">Submitt</button>
+        </form>
+    </div>
+    </div>
+    <!-- <footer>
         <p class="tekst">Contact me?</p>
         <div style="display: flex;">
             <a href="https://github.com/mrbobai">
@@ -49,7 +71,8 @@
                 <img src="resource/mail.png" alt="mail" id="mail">
             </a>
         </div>
-    </footer>
+    </footer> -->
+    <script src="index.js"></script>
 </body>
 
 </html>
