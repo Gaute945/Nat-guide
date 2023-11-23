@@ -21,21 +21,21 @@
         <h1>Question 1</h1>
         <p>kvifor bruker me Nat</p>
         <form>
-            <li>is this true?<input type="checkbox"></li>
-            <li>is this true?<input type="checkbox"></li>
-            <li>is this true?<input type="checkbox"></li>
-            <br><button type="button" onclick="next(1)">Submitt</button>
+            <li>offentlig ip-adresser er dyre<input type="checkbox" id="q1"></li>
+            <li>nettverket blir meir privat<input type="checkbox"></li>
+            <li>det gjomer ip din<input type="checkbox"></li>
+            <br><button type="button" onclick="next(1, 'q1')">Submitt</button>
         </form>
     </div>
 
     <div class="grid-content hidden" id="2">
         <h1>Question 2</h1>
-        <p>kvifor bruker me Nat</p>
+        <p>kvar kjoyrar Nat?</p>
         <form>
-            <li>is this true?<input type="checkbox"></li>
-            <li>is this true?<input type="checkbox"></li>
-            <li>is this true?<input type="checkbox"></li>
-            <br><button type="button" onclick="next(2)">Submitt</button>
+            <li>ruter / server<input type="checkbox" id="q2"></li>
+            <li>pc din<input type="checkbox"></li>
+            <li>hos din isp<input type="checkbox"></li>
+            <br><button type="button" onclick="next(2, 'q2')">Submitt</button>
         </form>
     </div>
 
@@ -43,25 +43,25 @@
         <h1>Question 3</h1>
         <p>kva brukes nat til</p>
         <form>
-            <li>is this true?<input type="checkbox"></li>
-            <li>is this true?<input type="checkbox"></li>
-            <li>is this true?<input type="checkbox"></li>
-            <br><button type="button" onclick="next(3)">Submitt</button>
+            <li>oversette private ip-adresser til ei offentlig ip<input type="checkbox" id="q3"></li>
+            <li>utføre komplekse matematiske beregninger<input type="checkbox"></li>
+            <li>optimalisere databasestrukturer<input type="checkbox"></li>
+            <br><button type="button" onclick="next(3, 'q3')">Submitt</button>
         </form>
     </div>
 
     <div class="grid-content hidden" id="4">
         <h1>Question 4</h1>
-        <p>kva bruker Nat</p>
+        <p>kva bruker Nat til oversettinga</p>
         <form>
-            <li>is this true?<input type="checkbox"></li>
-            <li>is this true?<input type="checkbox"></li>
-            <li>is this true?<input type="checkbox"></li>
-            <br><button type="button" onclick="next(4)">Submitt</button>
+            <li>source og destination ip<input type="checkbox" id="q4"></li>
+            <li>bare source ip<input type="checkbox"></li>
+            <li>bare destination ip<input type="checkbox"></li>
+            <br><button type="button" onclick="next(4, 'q4')">Submitt</button>
         </form>
     </div>
     </div>
-    <!-- <footer>
+    <footer>
         <p class="tekst">Contact me?</p>
         <div style="display: flex;">
             <a href="https://github.com/mrbobai">
@@ -71,7 +71,7 @@
                 <img src="resource/mail.png" alt="mail" id="mail">
             </a>
         </div>
-    </footer> -->
+    </footer>
     <script src="index.js"></script>
 </body>
 
