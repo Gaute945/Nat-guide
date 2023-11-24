@@ -1,5 +1,15 @@
+.screenshot {
+  width: 960px;
+  height: 540px;
+}
+
 #video {
-  padding-bottom: 3rem;
+  width: 960px;
+  height: 540px;
+}
+
+.last {
+  margin-bottom: 20rem;
 }
 
 .center {
@@ -8,11 +18,12 @@
 }
 
 .grid-content {
-  padding: 2vh;
   text-align: center;
+  place-items: center;
   background-color: var(--color4);
   font-family: var(--brødtekst);
   color: var(--color1);
+  width: 100%;
 }
 
 .hidden {
@@ -20,8 +31,9 @@
 }
 
 .grid-container {
+  display: grid;
   column-gap: 0px;
-  row-gap: 0px;
+  row-gap: 20rem;
   grid-template-columns: auto;
 }
 
@@ -30,17 +42,22 @@ body {
   margin: 0%;
 }
 
-footer {
+.footer {
   font-family: var(--brødtekst);
   font-size: 110%;
-  position: absolute;
   bottom: 0;
-  text-align: center;
+  left: 0;
+  width: 100%;
+  /* Make the footer full width */
+  padding: 1rem;
+  background-color: var(--color4);
+  color: var(--color1);
 }
 
 .tekst {
   font-family: var(--brødtekst);
   margin: 1%;
+  font-size: x-large;
 }
 
 .overskrift {

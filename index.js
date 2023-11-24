@@ -1,26 +1,48 @@
-let score = 0; // Declare score outside the function
+let score = 0;
+let subbmit = 0;
 
-function next(questionNumId, qid) {
-    let DOMqDiv = document.getElementById(questionNumId);
-    let NextQuestionNumId = questionNumId + 1;
-    if (questionNumId === 5) {
-        // If questionNumId is 4, you can return or do nothing to exit the function
-        return;
-    } else {
-        let NextDOMQDiv = document.getElementById(NextQuestionNumId);
+async function next(currentId, qid) {
+    // Get all checkboxes with the specified name
+    let checkboxes = document.querySelectorAll('input[name="' + qid + '"]');
 
+    // Uncheck all checkboxes
+    checkboxes.forEach(checkbox => {
+        checkbox.checked = false;
+    });
+
+    let DOMqDiv = document.getElementById(currentId);
+    console.log("currentId", currentId);
+    DOMqDiv.classList.add("hidden");
+    let nextId = currentId + 1;
+
+    if (nextId >= 6) {
+        nextId = 5;
         DOMqDiv.classList.add("hidden");
-        NextDOMQDiv.classList.remove("hidden");
     }
 
+    let NextDOMQDiv = document.getElementById(nextId);
+    NextDOMQDiv.classList.remove("hidden");
     let qx = document.getElementById(qid);
 
     if (qx.checked) {
-        console.log("it worked!");
         score++;
+        subbmit++;
+        console.log("riktig svar")
+        if (score >= 5) {
+            score = 4;
+        }
     } else {
-        console.log("it failed");
+        console.log("feil svar")
+        subbmit++;
     }
 
-    console.log(score);
+    console.log("subbmit" + subbmit)
+    if (subbmit == 4) {
+        console.log("active");
+        answer = (score * 100) / 4; // Calculate the percentage
+        document.getElementById("qanswer").innerHTML = "du fekk " + answer + "% rett!";
+        console.log(score);
+    } else {
+        console.log("not active")
+    }
 }

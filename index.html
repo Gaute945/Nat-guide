@@ -9,69 +9,92 @@
 </head>
 
 <body>
-    <div class="center">
-        <p class="overskrift">Nat tetorial</p>
-        <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/kLYVd5QpsPA?si=vazkp10pxADgR9Jg"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-        </iframe>
-    </div>
-    <div class="grid-content" id="1">
-        <h1>Question 1</h1>
-        <p>kvifor bruker me Nat</p>
-        <form>
-            <li>offentlig ip-adresser er dyre<input type="checkbox" id="q1"></li>
-            <li>nettverket blir meir privat<input type="checkbox"></li>
-            <li>det gjomer ip din<input type="checkbox"></li>
-            <br><button type="button" onclick="next(1, 'q1')">Submitt</button>
-        </form>
-    </div>
-
-    <div class="grid-content hidden" id="2">
-        <h1>Question 2</h1>
-        <p>kvar kjoyrar Nat?</p>
-        <form>
-            <li>ruter / server<input type="checkbox" id="q2"></li>
-            <li>pc din<input type="checkbox"></li>
-            <li>hos din isp<input type="checkbox"></li>
-            <br><button type="button" onclick="next(2, 'q2')">Submitt</button>
-        </form>
-    </div>
-
-    <div class="grid-content hidden" id="3">
-        <h1>Question 3</h1>
-        <p>kva brukes nat til</p>
-        <form>
-            <li>oversette private ip-adresser til ei offentlig ip<input type="checkbox" id="q3"></li>
-            <li>utføre komplekse matematiske beregninger<input type="checkbox"></li>
-            <li>optimalisere databasestrukturer<input type="checkbox"></li>
-            <br><button type="button" onclick="next(3, 'q3')">Submitt</button>
-        </form>
-    </div>
-
-    <div class="grid-content hidden" id="4">
-        <h1>Question 4</h1>
-        <p>kva bruker Nat til oversettinga</p>
-        <form>
-            <li>source og destination ip<input type="checkbox" id="q4"></li>
-            <li>bare source ip<input type="checkbox"></li>
-            <li>bare destination ip<input type="checkbox"></li>
-            <br><button type="button" onclick="next(4, 'q4')">Submitt</button>
-        </form>
-    </div>
-    </div>
-    <footer>
-        <p class="tekst">Contact me?</p>
-        <div style="display: flex;">
-            <a href="https://github.com/mrbobai">
-                <img src="resource/github.png" id="git">
-            </a>
-            <a href="mailto:e-gaugro@iskule.no">
-                <img src="resource/mail.png" alt="mail" id="mail">
-            </a>
+    <div class="grid-container">
+        <div class="center">
+            <div class="grid-content">
+                <h1>Nat tetorial</h1>
+                <iframe id="video" src="https://www.youtube.com/embed/kLYVd5QpsPA?si=vazkp10pxADgR9Jg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                <p class="tekst">Video om korleis NAT fungerer</p>
+            </div>
         </div>
-    </footer>
+
+        <div class="grid-content">
+            <h1>Privat og offentlige IP-adresser</h1>
+            <img src="resource/Screenshot1.png" alt="Screenshot1" class="Screenshot">
+            <p class="tekst">Private IP-adressene er blå og offentlige IP-addresene er gul</p>
+        </div>
+
+        <div class="grid-content">
+            <h1>Packets med nat</h1>
+            <img src="resource/Screenshot2.png" alt="Screenshot2" class="Screenshot">
+            <p class="tekst">Nat bruker tabbelen i venstre hjørne</p>
+            <p class="tekst">Packeten starter ved min Pc og blir sendt til serveren ved bruk av Nat</p>
+        </div>
+
+        <div class="grid-content" id="1">
+            <h1>Question 1</h1>
+            <h1>kvifor bruker me Nat</p>
+            <form class="tekst">
+                <li>nettverket blir meir privat<input type="checkbox"></li>
+                <li>det gjomer ip din<input type="checkbox"></li>
+                <li>offentlig ip-adresser er dyre<input type="checkbox" id="q1"></li>
+                <br><button type="button" onclick="next(1, 'q1')">Submitt</button>
+                <footer>
+                    <div style="display: flex;">
+                        <a href="https://github.com/mrbobai">
+                            <img src="resource/github.png" id="git">
+                        </a>
+                        <a href="mailto:e-gaugro@iskule.no">
+                            <img src="resource/mail.png" alt="mail" id="mail">
+                        </a>
+                    </div>
+                </footer>
+            </form>
+        </div>
+
+        <div class="grid-content hidden" id="2">
+            <h1>Question 2</h1>
+            <p>kvar kjoyrar Nat?</p>
+            <form>
+                <li>pc din<input type="checkbox"></li>
+                <li>ruter / server<input type="checkbox" id="q2"></li>
+                <li>hos din isp<input type="checkbox"></li>
+                <br><button type="button" onclick="next(2, 'q2')">Submitt</button>
+            </form>
+        </div>
+
+        <div class="grid-content hidden" id="3">
+            <h1>Question 3</h1>
+            <p>kva brukes nat til</p>
+            <form>
+                <li>utføre komplekse matematiske beregninger<input type="checkbox"></li>
+                <li>oversette private ip-adresser til ei offentlig ip<input type="checkbox" id="q3"></li>
+                <li>optimalisere databasestrukturer<input type="checkbox"></li>
+                <br><button type="button" onclick="next(3, 'q3')">Submitt</button>
+            </form>
+        </div>
+
+        <div class="grid-content hidden" id="4">
+            <h1>Question 4</h1>
+            <p>kva bruker Nat til oversettinga</p>
+            <form>
+                <li>source og destination ip<input type="checkbox" id="q4"></li>
+                <li>bare source ip<input type="checkbox"></li>
+                <li>bare destination ip<input type="checkbox"></li>
+                <br><button type="button" onclick="next(4, 'q4')">Submitt</button>
+            </form>
+        </div>
+
+        <div class="grid-content hidden" id="5">
+            <h1>Resualt</h1>
+            <p>du treng 75% eller meir for og bestå</p>
+            <p id="qanswer"></p>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 
