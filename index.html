@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="no">
 
 <head>
     <meta charset="UTF-8">
@@ -12,37 +12,37 @@
     <div class="grid-container">
         <div class="center">
             <div class="grid-content">
-                <h1>Nat tetorial</h1>
+                <h1>Nat tutorial</h1>
                 <iframe id="video" src="https://www.youtube.com/embed/kLYVd5QpsPA?si=vazkp10pxADgR9Jg"
                     title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allow="accelerometer; autoplay; clIPboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                 </iframe>
-                <p class="tekst">Video om korleis NAT fungerer</p>
+                <p class="tekst">Video om korleis NAT fungere</p>
             </div>
         </div>
 
         <div class="grid-content">
-            <h1>Privat og offentlige IP-adresser</h1>
+            <h1>Privat og offentleg IP-adresser</h1>
             <img src="resource/Screenshot1.png" alt="Screenshot1" class="Screenshot">
-            <p class="tekst">Private IP-adressene er blå og offentlige IP-addresene er gul</p>
+            <p class="tekst">Private IP-adressene er blå og offentlige IP-adressene er gul</p>
         </div>
 
         <div class="grid-content">
-            <h1>Packets med nat</h1>
+            <h1>Packets med NAT</h1>
             <img src="resource/Screenshot2.png" alt="Screenshot2" class="Screenshot">
-            <p class="tekst">Nat bruker tabbelen i venstre hjørne</p>
-            <p class="tekst">Packeten starter ved min Pc og blir sendt til serveren ved bruk av Nat</p>
+            <p class="tekst">NAT bruker tabellen i venstre hjørne</p>
+            <p class="tekst">Packeten startar ved min Pc og blir sendt til serveren ved bruk av Nat</p>
         </div>
 
         <div class="grid-content" id="1">
-            <h1>Question 1</h1>
-            <h1>kvifor bruker me Nat</p>
+            <h1>Spørsmål 1</h1>
+            <h2>kvifor bruker me Nat</h2>
             <form class="tekst">
                 <li>nettverket blir meir privat<input type="checkbox"></li>
-                <li>det gjomer ip din<input type="checkbox"></li>
-                <li>offentlig ip-adresser er dyre<input type="checkbox" id="q1"></li>
-                <br><button type="button" onclick="next(1, 'q1')">Submitt</button>
+                <li>det gjømmer IP din<input type="checkbox"></li>
+                <li>offentlig IP-adresser er dyre<input type="checkbox" id="q1"></li>
+                <br><button type="button" onclick="next(1, 'q1')">Send inn</button>
                 <footer>
                     <div style="display: flex;">
                         <a href="https://github.com/mrbobai">
@@ -57,45 +57,85 @@
         </div>
 
         <div class="grid-content hidden" id="2">
-            <h1>Question 2</h1>
-            <p>kvar kjoyrar Nat?</p>
-            <form>
+            <h1>Spørsmål 2</h1>
+            <h2>kvar køyrar NAT?</h2>
+            <form class="tekst">
                 <li>pc din<input type="checkbox"></li>
                 <li>ruter / server<input type="checkbox" id="q2"></li>
                 <li>hos din isp<input type="checkbox"></li>
-                <br><button type="button" onclick="next(2, 'q2')">Submitt</button>
+                <br><button type="button" onclick="next(2, 'q2')">Send inn</button>
+                <footer>
+                    <div style="display: flex;">
+                        <a href="https://github.com/mrbobai">
+                            <img src="resource/github.png" id="git">
+                        </a>
+                        <a href="mailto:e-gaugro@iskule.no">
+                            <img src="resource/mail.png" alt="mail" id="mail">
+                        </a>
+                    </div>
+                </footer>
             </form>
         </div>
 
         <div class="grid-content hidden" id="3">
-            <h1>Question 3</h1>
-            <p>kva brukes nat til</p>
-            <form>
+            <h1>Spørsmål 3</h1>
+            <h2>kva brukes nat til</h2>
+            <form class="tekst">
                 <li>utføre komplekse matematiske beregninger<input type="checkbox"></li>
-                <li>oversette private ip-adresser til ei offentlig ip<input type="checkbox" id="q3"></li>
+                <li>oversette private IP-adresser til ei offentlig IP<input type="checkbox" id="q3"></li>
                 <li>optimalisere databasestrukturer<input type="checkbox"></li>
-                <br><button type="button" onclick="next(3, 'q3')">Submitt</button>
+                <br><button type="button" onclick="next(3, 'q3')">Send inn</button>
+                <footer>
+                    <div style="display: flex;">
+                        <a href="https://github.com/mrbobai">
+                            <img src="resource/github.png" id="git">
+                        </a>
+                        <a href="mailto:e-gaugro@iskule.no">
+                            <img src="resource/mail.png" alt="mail" id="mail">
+                        </a>
+                    </div>
+                </footer>
             </form>
         </div>
 
         <div class="grid-content hidden" id="4">
-            <h1>Question 4</h1>
-            <p>kva bruker Nat til oversettinga</p>
-            <form>
-                <li>source og destination ip<input type="checkbox" id="q4"></li>
-                <li>bare source ip<input type="checkbox"></li>
-                <li>bare destination ip<input type="checkbox"></li>
-                <br><button type="button" onclick="next(4, 'q4')">Submitt</button>
+            <h1>Spørsmål 4</h1>
+            <h2>kva bruker Nat til oversettinga</h2>
+            <form class="tekst">
+                <li>source og destination IP<input type="checkbox" id="q4"></li>
+                <li>bare source IP<input type="checkbox"></li>
+                <li>bare destination IP<input type="checkbox"></li>
+                <br><button type="button" onclick="next(4, 'q4')">Send inn</button>
+                <footer>
+                    <div style="display: flex;">
+                        <a href="https://github.com/mrbobai">
+                            <img src="resource/github.png" id="git">
+                        </a>
+                        <a href="mailto:e-gaugro@iskule.no">
+                            <img src="resource/mail.png" alt="mail" id="mail">
+                        </a>
+                    </div>
+                </footer>
             </form>
         </div>
 
         <div class="grid-content hidden" id="5">
-            <h1>Resualt</h1>
-            <p>du treng 75% eller meir for og bestå</p>
-            <p id="qanswer"></p>
+            <h1>Resultat</h1>
+            <h2>du treng 75% eller meir for og bestå</h2>
+            <p id="qanswer" class="tekst"></p>
+            <footer>
+                <div style="display: flex;">
+                    <a href="https://github.com/mrbobai">
+                        <img src="resource/github.png" id="git">
+                    </a>
+                    <a href="mailto:e-gaugro@iskule.no">
+                        <img src="resource/mail.png" alt="mail" id="mail">
+                    </a>
+                </div>
+            </footer>
         </div>
     </div>
-    <script src="index.js"></script>
+    <scrIPt src="index.js"></scrIPt>
 </body>
 
 </html>
